@@ -1,0 +1,93 @@
+Epitech Group   		      				        3/4 EPITV
+Request for Comments : 	        	      	       	         	Epitech
+Category : R-TYPE-Protocol        			                November 2019
+RFC : 1
+
+			             R-TYPE PROTOCOL
+
+Status of this Memo
+
+   This memo provides information for the Internet community.  This
+   memo specify an Internet standard communication protocol for all
+   R-TYPE clients and servers.
+   Distribution of this memo is unlimited.
+
+Copyright Notice
+
+   Copyright (C) Epitech.  All Rights Reserved.
+
+Table of Contents
+
+    1.	 Introduction . . . . . . . . . . . . . . . . . . . . . . ..2
+    2.	 Server greeting. . . . . . . . . . . . . . . . . . . . . ..3
+    3.	 Client commands. . . . . . . . . . . . . . . . . . . .  . .4
+    4.	 In game udp protocol . . . . . . . . . . . . . . . . . . ..5
+
+Epitech		      	   R-TYPE-PROTOCOL     	      	      	[Page 1]
+
+
+
+RFC 1	  		   R-TYPE-Protocol		                    	November 2019
+
+    1.    Introduction
+
+    	  The R-TYPE-Protocol provides information about the
+ 	  communication between clients and R-TYPE pre-game's server.
+ 	  The R-TYPE pre-game protocol is a TCP protocol.
+
+Epitech 	      	   R-TYPE-PROTOCOL     	      	      	[Page 2]
+
+RFC 1	  		       R-TYPE-Protocol		               		November 2019
+
+	2.	  Server greeting
+
+		A client is connected
+
+
+Epitech		      	   R-TYPE-PROTOCOL     	      	      	[Page 3]
+
+RFC 1	  		       R-TYPE-Protocol		                	November 2019
+
+    3.	 Client commands
+
+ 		The client MAY ask to a R-TYPE server informations about rooms. R-TYPE server MUST handle the following commands :
+			
+ 		"join $ID" (where $ID is a room id)
+ 			Ask server to join a specified room.				
+
+ 		"create"
+ 			Ask server to create a new room. The server MUST
+ 			reply to this request with a unique valid room id.
+
+Epitech		      	   R-TYPE-PROTOCOL     	      	      	[Page 4]
+
+RFC 1	  		       R-TYPE-Protocol		               		November 2019
+
+	4.     In game UDP-protocol
+		During the game the client/server communication MUST use a UDP Protocol. Each packet has to have the following format :
+
+
+		1 Byte About the reliability of the packet, the value MUST be
+		       one if the client/server HAVE to acknowledge.
+		       0 Otherwise.
+
+		4 Bytes Designing an unique number to identify the packet.
+
+		1 Byte about the packet type, possible values are :
+			0 : position packet,
+			1 : input packet,
+			2 : death packet,
+			3 : acknowledge packet,
+			4 : end game packet.
+
+		4 Bytes About the player id
+
+		2 Bytes About the graphic id to draw
+
+		256 Bytes containing additional informations.
+
+		8 Bytes designing the size of the packet
+
+
+
+Epitech 	      	   R-TYPE-PROTOCOL     	      	      	[Page 5]
