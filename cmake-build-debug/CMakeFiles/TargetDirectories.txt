@@ -1,4 +1,0 @@
-/home/hugo/delivery/TEK3/CPP_rtype_2019/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/hugo/delivery/TEK3/CPP_rtype_2019/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/hugo/delivery/TEK3/CPP_rtype_2019/cmake-build-debug/CMakeFiles/r_type.dir
-/home/hugo/delivery/TEK3/CPP_rtype_2019/cmake-build-debug/CMakeFiles/gameserver.dir
